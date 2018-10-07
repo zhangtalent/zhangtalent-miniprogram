@@ -1,0 +1,28 @@
+<view class="parent">
+  <view class="section">
+    <picker bindchange="bindyear" value="{{yearindex}}" range="{{yeararray}}">
+      <view class="picker">
+        选择年份：{{yeararray[yearindex]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <picker bindchange="bindterm" value="{{termindex}}" range="{{termarray}}">
+      <view class="picker">
+        选择学期：{{termarray[termindex]}}
+      </view>
+    </picker>
+  </view>
+
+  <button  type="primary"  style="margin-top:15px;font-size:13px;color:#fff;" bindtap='getexam'>搜索</button>
+  <view style="margin-top:25px;"></view>
+  <view wx:for="{{items}}" wx:for-item="item">
+    <view style="font-size:18px;">{{item.kcmc}}</view>
+    <view style="font-size:15px;">时间:{{item.kssj}}</view>
+    <view style="font-size:13px;">类型:{{item.ksmc}}</view>
+    <view style="font-size:13px;">考场:{{item.cdmc}}</view>
+    
+    <view style="height:1px;width:100%;background-color:#ddd;"></view>
+  </view>
+</view>

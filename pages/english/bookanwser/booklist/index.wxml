@@ -1,0 +1,33 @@
+<image style='width:100%;' src="/images/logohead.jpg" mode="widthFix"/>
+<view style='margin-top:25px;'></view>
+<view class="section">
+  <picker bindchange="bindbook1" value="{{book1index}}" range="{{book1array}}">
+    <view class="picker">
+        新视野大学英语（读写）第一册
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <picker bindchange="bindbook2" value="{{book2index}}" range="{{book2array}}">
+    <view class="picker">
+        新视野大学英语（读写）第二册
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <picker bindchange="bindbook3" value="{{book3index}}" range="{{book3array}}">
+    <view class="picker">
+        新视野大学英语（读写）第三册
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <picker bindchange="bindbook4" value="{{book4index}}" range="{{book4array}}">
+    <view class="picker">
+        新视野大学英语（读写）第四册
+    </view>
+  </picker>
+</view>

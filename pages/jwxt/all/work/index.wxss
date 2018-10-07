@@ -1,0 +1,28 @@
+/* pages/jwxt/table/index.wxss */
+.parent{
+  width: 100%;
+ 
+  background-color: rgb(238, 238, 238);
+}
+.item{
+  width: 100%;
+  padding-top:5px;
+  padding-left:5px;
+  background-color: #fff;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 200;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+}
+.greenbg{
+	padding:5px;
+	border-radius: 1px;
+	background-color:#9AFF9A;
+	display:inline-block;
+	font-size:15px;
+	color:rgb(255, 255, 255);
+	width:100%;
+}

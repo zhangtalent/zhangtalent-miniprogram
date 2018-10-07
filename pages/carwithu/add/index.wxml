@@ -1,0 +1,12 @@
+<input bindinput="setlocation"  class="box" placeholder='出发地'></input>  
+
+<input bindinput="setdestination"  class="box" placeholder='目的地'></input>  
+
+<input bindinput="setpeoplenum"  class="box" placeholder='人数'></input>  
+
+<input bindinput="settime"  class="box" placeholder='出发时间'></input>  
+
+<input bindinput="setcontact"  class="box" placeholder='电话-联系'></input>  
+
+
+  <button style="width:85%;margin-top:5%;color:green;font-size:13px;" bindtap="submit">提   交</button> 

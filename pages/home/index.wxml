@@ -1,0 +1,40 @@
+<!--pages/home/index.wxml-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{ads}}" wx:for-index="index">  
+        <swiper-item>  
+          <image bindtap='show' data-uuid="{{item.uuid}}"  src="{{item.imgurl}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+</swiper>
+<view class="parent">
+  <view style="margin-top:15px;"></view>
+  <text class="itemtitle">教学服务</text>
+  <!--第一行-->
+  <view>
+      <button class="itembt" type='primary' style="font-size:13px;"  bindtap="jwxtlogin" plain="true">教务系统</button>
+      <button class="itembt"  type='primary' style="font-size:13px;"  bindtap="english" plain="true">英语答案</button>
+      <button class="itembt"  type='primary' style="font-size:13px;"  bindtap="library" plain="true">图书馆</button>
+
+  </view>
+  <view style="margin-top:10%;width:100%;height:25px;display:block;"></view>
+  <view>
+    <text class="itemtitle">生活查询</text>
+    <view>
+    <!--第2行-->
+    <button class="itembt"  type='primary' style="font-size:13px;"  bindtap="gowater" plain="true">电费查询</button>
+
+    <button class="itembt"  type='primary' style="font-size:13px;"  bindtap="gosqf" plain="true">社区分查询</button>
+
+
+    </view>
+  </view>
+
+  <view wx:if="{{show}}" style="box-shadow:0px 0px 5px #ddd;border-radius:15px;padding:35px;text-align:center;margin:0 auto;z-index:999;position:fixed;left:5%;right:5%;top:45%;background-color:#fff;">
+      
+      <view style='font-weight:200;'>欢迎使用！
+      </view>
+
+      <button type='primary' style="margin-top:15px;font-size:13px;"  plain="true" bindgetuserinfo="bindGetUserInfo" open-type='getUserInfo'>好的        </button>    
+  </view>
+  
+</view>  

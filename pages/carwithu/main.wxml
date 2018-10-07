@@ -1,0 +1,23 @@
+<view class="parent">
+
+
+  <view class='card' wx:for="{{items}}" wx:for-item="item">
+    <view class='cardleft'>{{item.location}}</view>
+    <view class='cardmid'><view>{{item.time}}</view>
+    </view>
+    <view class='cardright'>{{item.destination}}</view>
+    <view style="height:40px;border-radius:20px;width:75px;background-color:#7FFFAA;font-size:21px;color:#fff;line-height:40px;text-align:center;margin:0 auto;">{{item.peoplenum}}人</view>
+    
+    <view style='width:100%:'>
+    <view style='text-align:left;margin-left:10px;height:45px;color:black;display:inline-block;'>
+    <view style='font-weight:200;font-size:15px;margin-left:25px;'>
+   <image style='height:30px;width:30px;margin:0 auto;' src='/images/call.png' bindtap='call' data-num='{{item.contact}}'></image> 联系Ta
+    </view>
+    
+    </view>
+    </view>
+
+  </view>
+  <image mode="aspectFill"  bindtap='goadd' style='position:fixed;z-index:222;bottom:15px;right:15px;width:50px;height:50px;border-radius:5px;' src="/images/add_icon.png"></image>
+
+</view>

@@ -1,0 +1,25 @@
+/* pages/home/index.wxss */
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.parent{
+  padding:10px;
+}
+.itembt{
+  font-size: 11px;
+  font-weight: 200;
+  width:30.3%;
+  margin: 1.5%;
+  float:left;
+}
+.itemtitle{
+  color:#0eb683;
+  font-weight: 250;
+  font-size: 15px;
+  margin-left: 1.5%;
+}

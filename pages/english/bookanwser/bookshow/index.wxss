@@ -1,0 +1,6 @@
+/* pages/english/bookanwser/bookshow/index.wxss */
+@import "../../../../utils/wxParse/wxParse.wxss";
+.parent{
+  padding:10px;
+  font-weight: 250;
+}

@@ -1,0 +1,12 @@
+/* pages/myschool/add/index.wxss */
+.box{
+  font-weight:300;
+	color: 68c7f9;
+	max-height: 100px;
+	width: 80%;
+	margin-left: 15px;
+	margin-top: 5px;
+	background-color:#EEEDED;
+	border-width: 0px;
+  padding: 10px;
+}

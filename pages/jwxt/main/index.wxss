@@ -1,0 +1,19 @@
+/* pages/jwxt/main/index.wxss */
+
+.parent{
+  width: 97%;
+  padding:1.5%;
+}
+.item{
+  padding-top: 5%;
+  font-size: 13px;
+  width:30.3%;
+  margin: 1.5%;
+  font-weight: 200;
+  float:left;
+  text-align: center;
+}
+.icon{
+  width: 55px;
+  height: 55px;
+}

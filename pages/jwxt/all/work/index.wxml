@@ -1,0 +1,20 @@
+<view class="parent">
+
+  <view class='item' wx:for="{{items}}" wx:for-item="item" id="{{item.pageid}}" bindtap='show' data-uuid="{{item.pageid}}">
+    <view style='width:100%:'><image  mode="aspectFill" style='width:45px;height:45px;float:left;' src='{{item.icon}}'></image>
+    <view style='text-align:left;margin-left:5px;height:30px;color:#000;display:inline-block;'>
+    <view style='font-size:13px;;'>
+    {{item.username}}
+    </view>
+    <view  style='font-size:11px;color:gray;'>
+    {{item.time}}
+    </view>
+    </view>
+    </view>
+    <view style="margin-top:5px;margin-left:50px;width:70%;">
+    <text selectable='{{true}}' style="font-weight: 200;font-size:15px;">{{item.title}}        </text>
+    
+    <view wx:if="{{item.img != ''}}"><image mode="aspectFill" style='width:150px;height:150px;border-radius:5px;' src='{{item.img}}'></image></view>
+    </view>
+  </view>
+</view>

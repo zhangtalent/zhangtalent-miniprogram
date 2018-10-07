@@ -1,0 +1,72 @@
+/* pages/jwxt/table/index.wxss */
+.parent{
+  width: 100%;
+ 
+  background-color: #fff;
+}
+.item{
+  width: 100%;
+  padding-top:15px;
+  padding-left:5px;
+  background-color: #fff;
+  margin-top: 15px;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+.iconitem{
+ 
+  font-size: 13px;
+  width:47%;
+  margin-top: 3.5%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  font-weight: 200;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.icon{
+  width: 50px;
+  height: 50px;
+}
+
+.card{
+  width: 100%;
+  box-shadow: 0px 0px 3px #ddd;
+	background: #fff;
+}
+
+
+
+
+
+
+
+.cardleft{
+	font-weight:180;
+	font-size:18px;
+	height:70px;
+	width:33.3%;
+	line-height:70px;
+	display:inline-block;
+  text-align: center;
+}
+.cardmid{
+	color:#4682B4;
+	height:70px;
+	line-height:70px;
+	display:inline-block;
+	width:33.3%;
+  text-align: center;
+}
+.cardright{
+	font-weight:180;
+	font-size:18px;
+	height:70px;
+	display:inline-block;
+	line-height:70px;
+	width:33.3%;
+  text-align: center;
+}

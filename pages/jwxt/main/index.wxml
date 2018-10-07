@@ -1,0 +1,22 @@
+<!--pages/jwxt/main/index.wxml-->
+<view class="parent">
+<view class="item" bindtap='score'>
+  <image class='icon' src='/images/ico_but13.png'></image>
+  <view>成绩</view>
+</view>
+
+<view class="item" bindtap='table'>
+  <image class='icon' src='/images/ico_but31.png'></image>
+  <view>课表</view>
+</view>
+
+<view class="item" bindtap='rank'>
+  <image class='icon' src='/images/ico_but41.png'></image>
+  <view>排名</view>
+</view>
+
+<view class="item" bindtap='exam'>
+  <image class='icon' src='/images/ico_but31.png'></image>
+  <view class="">考场安排</view>
+</view>
+</view>

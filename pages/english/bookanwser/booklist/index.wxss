@@ -1,0 +1,10 @@
+/* pages/english/bookanwser/booklist/index.wxss */
+@import "/style/weui.wxss";
+
+.section{
+  text-align: center;
+  font-weight: 200;
+  padding-top: 25px;
+  font-size: 15px;
+  padding-bottom: 25px;
+}
