@@ -1,0 +1,16 @@
+<!--pages/jwxt/login/index.wxml-->
+<view class="parent">
+  <view style='margin-top:25%;'></view>
+  <view style='text-align:center;'>续借</view>
+  
+  <view class="weui-cells">
+      <view class="weui-cell weui-cell_input">
+        <input bindinput="setauthcode" class="weui-input" placeholder="验证码"/>
+      </view>
+      <image bindtap="code" style='margin-left:15px;width:75px;height:30px;' src='{{imgurl}}'>
+      </image>
+  </view>
+
+
+  <button style="width:80%;margin-top:5%;color:green;font-size:13px;" bindtap="gorent">确认续借</button>   
+</view>

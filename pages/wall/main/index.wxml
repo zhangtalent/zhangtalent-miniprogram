@@ -1,0 +1,55 @@
+<view class="parent">
+
+  <view class="iconitem" bindtap='running'>
+    <image class='icon' src='/images/helprun.png'></image>
+    <view>兼职-跑腿</view>
+  </view>
+
+  <view class="iconitem" bindtap='togethercar'>
+    <image class='icon' src='/images/work.png'></image>
+    <view>拼车</view>
+  </view>
+  <view class='item' wx:for="{{items}}" wx:for-item="item">
+    <view style='width:100%:'><image  mode="aspectFill" style='width:45px;height:45px;float:left;' src='{{item.icon}}'></image>
+    <view style='text-align:left;margin-left:10px;height:45px;color:black;display:inline-block;'>
+    <view style='font-size:15px;;'>
+    {{item.username}}
+    </view>
+    <view  style='font-size:11px;color:gray;'>
+    {{item.time}}
+    </view>
+    </view>
+    </view>
+    <view style="margin-top:5px;margin-left:55px;width:70%;">
+
+    <view class="greenbg" wx:if="{{item.type=='lost'&&item.state=='2'}}">
+      寻物---(已找到主人)
+    </view>
+    <view class="greenbg" wx:if="{{item.type=='lost'&&item.state=='1'}}">
+      寻物
+    </view>
+    <view class="greenbg" wx:if="{{item.type=='found'&&item.state=='2'}}">
+      招领--(已找到主人)
+    </view>
+    <view class="greenbg" wx:if="{{item.type=='found'&&item.state=='1'}}">
+      招领
+    </view>
+    <view style="font-weight: 180;font-size:15px;" selectable='{{true}}' >{{item.title}}</view>
+    <view style="font-weight: 180;font-size:12px;" selectable='{{true}}' >{{item.place}}</view>
+    <view style="font-weight: 180;font-size:12px;" selectable='{{true}}' >{{item.more}}</view>
+    <text style="font-weight: 180;font-size:12px;" selectable='{{true}}' >{{item.contact}}</text>
+    <view style="margin-top:10px;"></view>
+    <view wx:if="{{item.img != ''}}"><image mode="aspectFill" style='width:150px;height:150px;border-radius:5px;' src='{{item.img}}'></image></view>
+    </view>
+  </view>
+
+
+    <view wx:if="{{show}}" style="box-shadow:0px 0px 5px #ddd;border-radius:15px;padding:35px;text-align:center;margin:0 auto;z-index:999;position:fixed;left:5%;right:5%;top:45%;background-color:#fff;">
+      
+      <view style='font-weight:200;'>欢迎使用！
+      </view>
+
+      <button type='primary' style="margin-top:15px;font-size:13px;"  plain="true" bindgetuserinfo="bindGetUserInfo" open-type='getUserInfo'>好的        </button>    
+  </view>
+
+</view>

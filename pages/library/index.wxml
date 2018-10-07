@@ -1,0 +1,25 @@
+<!--pages/jwxt/login/index.wxml-->
+<view class="parent">
+  <view style='margin-top:25%;'></view>
+  
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input bindinput="setstucode" value="{{stucode}}" class="weui-input" auto-focus placeholder="学号"/>
+      </view>
+  </view>
+  <view class="weui-cells">
+      <view class="weui-cell weui-cell_input">
+        <input bindinput="setpassword" type='password' value="{{password}}" class="weui-input" auto-focus placeholder="密码"/>
+      </view>
+  </view>
+    <view class="weui-cells">
+      <view class="weui-cell weui-cell_input">
+        <input bindinput="setauthcode" class="weui-input" auto-focus placeholder="验证码"/>
+      </view>
+      <image bindtap="code" style='margin-left:15px;width:75px;height:30px;' src='{{imgurl}}'>
+      </image>
+  </view>
+
+
+  <button style="width:80%;margin-top:5%;color:green;font-size:13px;" bindtap="login">登陆</button>   
+</view>

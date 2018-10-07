@@ -1,0 +1,43 @@
+<!--pages/myschool/main/index.wxml-->
+<view class='item' wx:for="{{items}}" wx:for-item="item">
+    <view style='width:100%:'><image  mode="aspectFill" style='width:25px;height:25px;float:left;' src='{{item.icon}}'></image>
+    <view style='text-align:left;height:25px;color:black;display:inline-block;'>
+    <view style='font-size:15px;font-weight:200px;margin-left:10px;'>
+    {{item.username}}
+    </view>
+
+    </view>
+    
+    </view>
+    <view style="margin-top:5px;width:100%;">
+    <view class='month'>{{item.month}}</view>
+    <view class='year'>{{item.year}}</view>
+    <view wx:if="{{item.imgurl != ''}}"><image mode="aspectFill" style='width:100%;' src='{{item.imgurl}}'></image></view>
+    <view style="font-weight: 180;font-size:15px;" selectable='{{true}}' >{{item.content}}</view>
+    <image bindtap='changeenjoy'  data-enjoyid='{{item.uuid}}'  style="width:30px;height:30px;" wx:if="{{item.isenjoy==1}}" src='{{love}}'></image>
+    <image bindtap='changeenjoy'  data-enjoyid='{{item.uuid}}'   style="width:30px;height:30px;"  wx:if="{{item.isenjoy==null}}" src='{{nolove}}'></image>
+     <image bindtap='changeenjoy' data-enjoyid='{{item.uuid}}'  style="width:30px;height:30px;"  wx:if="{{item.isenjoy==0}}" src='{{nolove}}'></image><text>{{item.enjoycount}}</text>
+    <view style="margin-top:10px;"></view>
+
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+  <image mode="aspectFill" style='position:fixed;z-index:222;bottom:15px;right:15px;width:50px;height:50px;border-radius:5px;' src="/images/add_icon.png" bindtap='goadd'></image>
+
+
+
+
+  <view wx:if="{{show}}" style="box-shadow:0px 0px 5px #ddd;border-radius:15px;padding:35px;text-align:center;margin:0 auto;z-index:999;position:fixed;left:5%;right:5%;top:45%;background-color:#fff;">
+      
+      <view style='font-weight:200;'>欢迎使用！
+      </view>
+
+      <button type='primary' style="margin-top:15px;font-size:13px;"  plain="true" bindgetuserinfo="bindGetUserInfo" open-type='getUserInfo'>好的        </button>    
+  </view>

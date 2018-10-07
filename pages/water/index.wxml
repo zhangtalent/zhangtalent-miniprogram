@@ -1,0 +1,27 @@
+<view class="parent">
+  <view style="margin-top:25px;"></view>
+  <view class="section">
+    <picker bindchange="bindlm" value="{{lmindex}}" range="{{lmarray}}">
+      <view class="picker">
+        选择楼房：{{lmarray[lmindex]}}
+      </view>
+    </picker>
+  </view>
+  <view style="margin-top:15px;"></view>
+  <view class="section">
+    <picker bindchange="bindlc" value="{{lcindex}}" range="{{lcarray}}">
+      <view class="picker">
+        选择楼层：{{lcarray[lcindex]}}
+      </view>
+    </picker>
+  </view>
+  <view style="margin-top:15px;"></view>
+  <view style='' class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input bindinput="setroom" value="{{room}}" class="weui-input" auto-focus placeholder="输入宿舍号(例如208)"/>
+      </view>
+  </view>
+  <button  type="primary"  style="margin-top:15px;font-size:13px;color:#fff;" bindtap='getwater'>搜索</button>
+  <view style="margin-top:25px;"></view>
+  <text style='font-weight:200;margin-right:15px;width:90%;'>{{result}}</text>
+</view>

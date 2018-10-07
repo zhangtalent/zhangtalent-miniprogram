@@ -1,0 +1,5 @@
+<textarea  bindinput="setcontent"  class="box" placeholder='说点什么'></textarea> 
+<image style='	margin-top:25px;margin-left: 15px;width:100px;height:100px;' src='{{imgurl}}' bindtap='selectpic' bindlongtap='delpic'></image>
+<view  style='margin-left: 15px;' >长按删除</view>
+
+  <button style="width:80%;margin-top:5%;color:green;font-size:13px;" bindtap="submit">上   传</button> 

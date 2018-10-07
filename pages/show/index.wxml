@@ -1,0 +1,3 @@
+<!--pages/show/index.wxml-->
+<rich-text nodes="{{content}}">
+</rich-text>

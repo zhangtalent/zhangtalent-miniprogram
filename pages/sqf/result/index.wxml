@@ -1,0 +1,5 @@
+<view class="parent">
+  <text style="font-weight: 200;">
+  {{datas}}
+  </text>
+</view>

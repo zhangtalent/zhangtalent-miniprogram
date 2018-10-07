@@ -1,0 +1,12 @@
+<view class="parent">
+<view style="margin-top:5px;font-weight: 200px;"></view>
+  <view wx:for="{{items}}" wx:for-item="item">
+    <view style="font-size:18px;font-weight: 200px;">{{item.bookname}}</view>
+    <view style="font-size:15px;font-weight: 200px;">{{item.renttime}}</view>
+    <view style="font-size:13px;font-weight: 200px;">{{item.endtime}}</view>
+    <view style="font-size:13px;font-weight: 200px;">{{item.building}}</view>
+    
+    <navigator url='continuerent/index?code={{item.code}}&check={{item.check}}'>续借</navigator>
+    <view style="height:1px;width:100%;background-color:#ddd;"></view>
+  </view>
+</view>

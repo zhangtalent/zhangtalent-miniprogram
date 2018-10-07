@@ -1,0 +1,23 @@
+.item { 
+		width:98%;
+		margin-left:1%;	
+    margin-bottom: 10px;
+    text-align:left;
+		color:#4e4e4e;
+		font-size:16px;
+		font-weight:200;
+		background:#fff;
+		border:1px #ddd;
+		float:left;
+		border-radius:5px;
+		}
+.month{
+		color:#4e4e4e;
+		font-size:23px;
+		font-weight:200;
+		}
+.year{
+		color:#000;
+		font-size:29px;
+		font-weight:200;
+		}

@@ -1,0 +1,6 @@
+/* pages/jwxt/table/index.wxss */
+.parent{
+  width: 97%;
+  padding-left:1.5%;
+  font-weight: 200px;
+}

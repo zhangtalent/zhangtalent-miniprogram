@@ -1,0 +1,7 @@
+/* pages/jwxt/login/index.wxss */
+@import "/style/weui.wxss";
+
+.parent{
+  padding-left:10px;
+  padding-right:10px;
+}
