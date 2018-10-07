@@ -26,7 +26,7 @@ Page({
         { 
           console.log(res.tempFilePaths[0])
           wx.uploadFile({ 
-            url: 'https://m.zhangtalent.cn/upload', 
+            url: 'https://m.zhangtalent.cn/xxx', 
             filePath: res.tempFilePaths[0],
             header: {
               //设置参数内容类型为x-www-form-urlencoded
