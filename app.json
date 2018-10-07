@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/jwxt/login/index",
+    "pages/jwxt/score/index",
+    "pages/jwxt/exam/index",
+    "pages/jwxt/main/index",
+    "pages/jwxt/table/index",
+    "pages/jwxt/rank/index",
+    "pages/water/index",
+    "pages/wall/main/index",
+    "pages/jwxt/all/work/index",
+    "pages/show/index",
+    "pages/english/bookanwser/booklist/index",
+    "pages/english/bookanwser/bookshow/index",
+    "pages/library/index",
+    "pages/library/booklist/index",
+    "pages/library/booklist/continuerent/index",
+    "pages/sqf/login/index",
+    "pages/sqf/result/index",
+    "pages/user/index",
+    "pages/carwithu/main",
+    "pages/myschool/main/index",
+    "pages/myschool/add/index",
+    "pages/carwithu/add/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FCFEFF",
+    "navigationBarTitleText": "张天才科技",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#FCFEFF"
+  },
+  "debug": false,
+  "tabBar": {
+    "backgroundColor": "#FCFEFF",
+    "color": "#a9b7b7",
+    "selectedColor": "#4e4e4e",
+    "borderStyle": "gray",
+    "list": [
+      {
+        "selectedIconPath": "images/home.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/lifewall.png",
+        "iconPath": "images/lifewall.png",
+        "pagePath": "pages/wall/main/index",
+        "text": "生活墙"
+      },
+      {
+        "selectedIconPath": "images/act.png",
+        "iconPath": "images/act.png",
+        "pagePath": "pages/myschool/main/index",
+        "text": "我的校"
+      }
+    ]
+  }
+}
