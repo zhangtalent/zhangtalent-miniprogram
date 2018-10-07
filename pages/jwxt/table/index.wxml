@@ -1,0 +1,16 @@
+<!--pages/jwxt/table/index.wxml-->
+<view class="parent">
+
+  <view style="margin-top:5px;"></view>
+
+  <view class="item" wx:for="{{items}}" wx:for-item="item">
+    <view style="font-size:18px;">{{item.xqjmc}}</view>
+    <view style="font-size:15px;">{{item.jc}}</view>
+    <view style="font-size:13px;">{{item.kcmc}}</view>
+    <view style="font-size:13px;">{{item.xm}}</view>
+    <view style="font-size:13px;">{{item.cdmc}}</view>
+    <view style="font-size:13px;">{{item.zcd}}</view>
+    <view style="height:1px;width:100%;background-color:#ddd;"></view>
+  </view>
+
+</view>

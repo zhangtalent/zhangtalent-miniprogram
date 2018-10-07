@@ -1,0 +1,30 @@
+<view class="parent">
+  <view style="margin-top:15px;"></view>
+  <view class="section">
+    <picker bindchange="bindyear" value="{{yearindex}}" range="{{yeararray}}">
+      <view class="picker">
+        选择年份：{{yeararray[yearindex]}}
+      </view>
+    </picker>
+  </view>
+   <view style="margin-top:15px;"></view>
+  <view class="section">
+    <picker bindchange="bindterm" value="{{termindex}}" range="{{termarray}}">
+      <view class="picker">
+        选择学期：{{termarray[termindex]}}
+      </view>
+    </picker>
+  </view>
+
+  <button  type="primary"  style="margin-right:20px;margin-top:15px;font-size:13px;color:#fff;" bindtap='getscore'>搜索</button>
+  <view style="margin-top:25px;"></view>
+  <view wx:for="{{items}}" wx:for-item="item">
+    <view style="font-size:18px;">{{item.kcmc}}</view>
+    <view style="font-size:15px;">成绩:{{item.cj}}</view>
+    <view style="font-size:13px;">类型:{{item.ksxz}}</view>
+    <view style="font-size:13px;">绩点:{{item.jd}}</view>
+    <view style="font-size:13px;">学分:{{item.xf}}</view>
+    <view style="font-size:13px;color:green;" id="{{item.jxb_id}}" data-jxb_id="{{item.jxb_id}}" bindtap="detail">查看成绩明细</view>
+    <view style="height:1px;width:100%;background-color:#ddd;"></view>
+  </view>
+</view>
